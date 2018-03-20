@@ -144,7 +144,7 @@ typedef struct <a class="el" href="structpt__match__result.html">pt_match_result
 <li>Start index of the match/capture</li>
 <li>Final index of the match/capture</li>
 <li>Number of <a class="el" href="unionpt__data.html" title="Collection of possible types for Expression Actions to return. ">pt_data</a> arguments</li>
-<li><a class="el" href="unionpt__data.html" title="Collection of possible types for Expression Actions to return. ">pt_data</a> arguments, processed on inner Actions. This array is static and <b>will not</b> exist after the Action returns.</li>
+<li><a class="el" href="unionpt__data.html" title="Collection of possible types for Expression Actions to return. ">pt_data</a> arguments, processed on inner Actions. Currently, this array is reused, so you should not rely on it after Action has returned</li>
 <li>User custom data from match options</li>
 </ul>
 <p>Return: Anything you want. This result will be used as argument for other actions below in the stack.</p>
