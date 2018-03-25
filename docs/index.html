@@ -75,6 +75,9 @@ $(function() {
 $ cd build
 $ cmake ..
 $ make
+</pre><h2>Package </h2>
+<p><a href="https://cmake.org/Wiki/CMake:Packaging_With_CPack">CPack</a> is configured for packaging <b>pega-texto</b>. From build directory, after building: </p><pre class="fragment">$ cpack
+</pre><p>By default, it uses the TGZ, STGZ and TZ generators. You may override this with other <a href="https://cmake.org/Wiki/CMake:CPackPackageGenerators">available generators</a> if you want: </p><pre class="fragment">$ cpack -DCPACK_GENERATOR=&lt;generator&gt;
 </pre><h2>Install </h2>
 <p>From build directory: </p><pre class="fragment">$ make install
 </pre><h2>Test </h2>
