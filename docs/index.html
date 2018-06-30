@@ -67,7 +67,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a href="https://travis-ci.org/gilzoide/pega-texto"></a></p>
-<p>A runtime engine for <a href="http://bford.info/packrat/">Parsing Expression Grammars (PEG)</a> in C, heavily inspired by <a href="http://www.inf.puc-rio.br/~roberto/lpeg/">LPeg</a>.</p>
+<p>A runtime engine for <a href="http://bford.info/packrat/">Parsing Expression Grammars (PEG)</a> in pure C, heavily inspired by <a href="http://www.inf.puc-rio.br/~roberto/lpeg/">LPeg</a>.</p>
 <p>In <b>pega-texto</b>, PEGs are just Expression arrays, and can be easily combined or rearranged dynamically. You can also provide a single expression (which, for C, is the same as a 1 element array) for simple pattern-matching.</p>
 <p>To use the values matched, each Expression may have a user defined Action function that produces a value. Each Action receives as parameter the values produced by Actions executed by inner matched Expressions, reducing them into a single value down the stack.</p>
 <h2>Build </h2>
@@ -76,8 +76,8 @@ $ cd build
 $ cmake ..
 $ make
 </pre><h2>Package </h2>
-<p><a href="https://cmake.org/Wiki/CMake:Packaging_With_CPack">CPack</a> is configured for packaging <b>pega-texto</b>. From build directory, after building: </p><pre class="fragment">$ cpack
-</pre><p>By default, it uses the TGZ, STGZ and TZ generators. You may override this with other <a href="https://cmake.org/Wiki/CMake:CPackPackageGenerators">available generators</a> if you want: </p><pre class="fragment">$ cpack -DCPACK_GENERATOR=&lt;generator&gt;
+<p><a href="https://gitlab.kitware.com/cmake/community/wikis/doc/cpack/Packaging-With-CPack">CPack</a> is configured for packaging <b>pega-texto</b>. From build directory, after building: </p><pre class="fragment">$ cpack
+</pre><p>By default, it uses the TGZ, STGZ and TZ generators. You may override this with other <a href="https://gitlab.kitware.com/cmake/community/wikis/doc/cpack/PackageGenerators">available generators</a> if you want: </p><pre class="fragment">$ cpack -DCPACK_GENERATOR=&lt;generator&gt;
 </pre><h2>Install </h2>
 <p>From build directory: </p><pre class="fragment">$ make install
 </pre><h2>Test </h2>
