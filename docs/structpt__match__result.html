@@ -69,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Match result: a {matched chars/error code, action result} pair.  
+<p>Match result: a {number of matched chars/match error code, action result/syntactic error code} pair.  
  <a href="structpt__match__result.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="match_8h_source.html">match.h</a>&gt;</code></p>
@@ -81,15 +81,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <tr class="memdesc:a2cac697b53844ad0bb0ab9487798c50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If non-negative, represents the number of characters matched; otherwise, it's an error code. <br /></td></tr>
 <tr class="separator:a2cac697b53844ad0bb0ab9487798c50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e2395bb9e7a99111250ab2a8f1519ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionpt__data.html">pt_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpt__match__result.html#a3e2395bb9e7a99111250ab2a8f1519ec">data</a></td></tr>
-<tr class="memdesc:a3e2395bb9e7a99111250ab2a8f1519ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resulting data from the last top-level Action.  <a href="#a3e2395bb9e7a99111250ab2a8f1519ec">More...</a><br /></td></tr>
+<tr class="memdesc:a3e2395bb9e7a99111250ab2a8f1519ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resulting data from the last top-level Action or first syntactic error found.  <a href="#a3e2395bb9e7a99111250ab2a8f1519ec">More...</a><br /></td></tr>
 <tr class="separator:a3e2395bb9e7a99111250ab2a8f1519ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Match result: a {matched chars/error code, action result} pair. </p>
+<div class="textblock"><p>Match result: a {number of matched chars/match error code, action result/syntactic error code} pair. </p>
 <p>This is returned by the <code>pt_match*</code> functions. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_infix_calculator_8c-example.html#_a18">InfixCalculator.c</a>, <a class="el" href="_lisp_8c-example.html#_a22">Lisp.c</a>, and <a class="el" href="_re_8c-example.html#_a29">Re.c</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="match_8h_source.html#l00058">58</a> of file <a class="el" href="match_8h_source.html">match.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="match_8h_source.html#l00059">59</a> of file <a class="el" href="match_8h_source.html">match.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a3e2395bb9e7a99111250ab2a8f1519ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e2395bb9e7a99111250ab2a8f1519ec">&#9670;&nbsp;</a></span>data</h2>
@@ -103,11 +103,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
       </table>
 </div><div class="memdoc">
 
-<p>Resulting data from the last top-level Action. </p>
-<p>If you need a single result for all top-level Actions, just create an outer one that folds them (which will always be the last top-level one). </p>
+<p>Resulting data from the last top-level Action or first syntactic error found. </p>
+<p>If <code>matched</code> is <code>PT_MATCHED_ERROR</code>, <code>data.i</code> will be populated with the first syntactic error code found. This is useful if you don't want to specify a <a class="el" href="action_8h.html#ad0d3dd7604f38370df0c5eb74a2b2ba6" title="Action to be called when an Error Expression is matched (on syntatic errors). ">pt_error_action</a> just for capturing the error code.</p>
+<dl class="section note"><dt>Note</dt><dd>If you need a single result for all top-level Actions, just create an outer one that folds them (which will always be the last top-level one). </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_infix_calculator_8c-example.html#a21">InfixCalculator.c</a>, <a class="el" href="_lisp_8c-example.html#a25">Lisp.c</a>, and <a class="el" href="_re_8c-example.html#a32">Re.c</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="match_8h_source.html#l00070">70</a> of file <a class="el" href="match_8h_source.html">match.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="match_8h_source.html#l00077">77</a> of file <a class="el" href="match_8h_source.html">match.h</a>.</p>
 
 </div>
 </div>
