@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['matched',['matched',['../structpt__match__result.html#a2cac697b53844ad0bb0ab9487798c50f',1,'pt_match_result']]],
-  ['matcher',['matcher',['../structpt__expr.html#a9560dfbbb8db7be478e921f3ba09ffd6',1,'pt_expr']]]
+  ['userdata_42',['userdata',['../structpt__match__options.html#afd0ffb02780e738d4c0a10ab833b7834',1,'pt_match_options']]]
 ];

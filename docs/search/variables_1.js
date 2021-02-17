@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['capacity',['capacity',['../structpt__match__action__stack.html#ad721fc6ca6a3d6ba3bc506576622aab0',1,'pt_match_action_stack::capacity()'],['../structpt__match__state__stack.html#ad721fc6ca6a3d6ba3bc506576622aab0',1,'pt_match_state_stack::capacity()']]],
-  ['characters',['characters',['../structpt__expr.html#a5367dd958dfafee1684789f1eb2143e5',1,'pt_expr']]]
+  ['initial_5fstack_5fcapacity_35',['initial_stack_capacity',['../structpt__match__options.html#aa5e83285e0c4838fd0ee6cf153fc77a5',1,'pt_match_options']]]
 ];

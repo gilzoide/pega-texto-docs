@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['pt_5fcharacter_5fclass_5ffunction',['pt_character_class_function',['../expr_8h.html#a2b61dbba8378cf0871012bcd19c47929',1,'expr.h']]],
-  ['pt_5fcustom_5fmatcher_5ffunction',['pt_custom_matcher_function',['../expr_8h.html#a4310feebf80172e2f6d62236a1d1aab8',1,'expr.h']]],
-  ['pt_5fend_5faction',['pt_end_action',['../action_8h.html#a36c74b065ff1f9092d65481833fdb988',1,'action.h']]],
-  ['pt_5ferror_5faction',['pt_error_action',['../action_8h.html#ad0d3dd7604f38370df0c5eb74a2b2ba6',1,'action.h']]],
-  ['pt_5fexpr',['pt_expr',['../expr_8h.html#ad6065b0488fc494589783241899e1358',1,'expr.h']]],
-  ['pt_5fexpression_5faction',['pt_expression_action',['../action_8h.html#a27822ec5a9ec2e2bf8854e10e8b8fdce',1,'action.h']]],
-  ['pt_5ffail_5faction',['pt_fail_action',['../action_8h.html#a56aeaf950f74cbb8bbc596a5bca63599',1,'action.h']]],
-  ['pt_5fiteration_5faction',['pt_iteration_action',['../action_8h.html#acfc61555ea9fa42cab2d4e7f83f7dcde',1,'action.h']]],
-  ['pt_5fmatch_5fresult',['pt_match_result',['../action_8h.html#ada6ffa7a8b7a9f4bda6b4fb15659fd40',1,'pt_match_result():&#160;action.h'],['../match_8h.html#ac276a6c4ffbf6d629b2f8539757daba0',1,'pt_match_result():&#160;match.h']]],
-  ['pt_5fmatch_5fstate_5fstack',['pt_match_state_stack',['../action_8h.html#ac14410a04b30c019032a03a9abf58eaf',1,'pt_match_state_stack():&#160;action.h'],['../match-state_8h.html#a38068088616f9672f0f61ff05e8b3e21',1,'pt_match_state_stack():&#160;match-state.h']]],
-  ['pt_5fsuccess_5faction',['pt_success_action',['../action_8h.html#ad0de97b8020ce9cae7619ef1302df120',1,'action.h']]]
+  ['pt_5fcustom_5fmatcher_5ffunction_43',['pt_custom_matcher_function',['../pega-texto_8h.html#ad3e785259a65654cc5e13a0db93c6fa9',1,'pega-texto.h']]],
+  ['pt_5ferror_5faction_44',['pt_error_action',['../pega-texto_8h.html#ae0f43e4f93ac893f7613a0a7aa964000',1,'pega-texto.h']]],
+  ['pt_5fexpression_5faction_45',['pt_expression_action',['../pega-texto_8h.html#a8ebbaaca3788e1acc6d4626eb585841c',1,'pega-texto.h']]],
+  ['pt_5fgrammar_46',['pt_grammar',['../pega-texto_8h.html#a57fc278815e75cba166d02814b5d0240',1,'pega-texto.h']]],
+  ['pt_5frule_47',['pt_rule',['../pega-texto_8h.html#aedea82048489fbecf422ca9a74b82e80',1,'pega-texto.h']]]
 ];
